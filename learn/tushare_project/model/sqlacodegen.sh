@@ -1,0 +1,1 @@
+sqlacodegen mysql+pymysql://oa:sl2#EDyu2H@101.201.101.171:3306/quant --outfile=models.py
