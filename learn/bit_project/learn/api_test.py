@@ -3,6 +3,7 @@ import requests
 
 '''
 https://my.okx.com/docs-v5/zh/?python#overview-rest-authentication 接口文档
+https://www.okx.com/zh-hans
 '''
 def bit_connect_test():
     response = requests.get('https://my.okx.com/api/v5/account/config')
