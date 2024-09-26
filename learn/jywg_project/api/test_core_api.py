@@ -6,6 +6,7 @@ from learn.jywg_project.emtl.core import login, query_funds_flow, create_order
 
 def test_login():
     validate_key = login(os.getenv("EM_USERNAME", ""), os.getenv("EM_PASSWORD", ""))
+
     print(validate_key)
     assert validate_key
     assert len(validate_key) == len("b91d8012-b70b-4265-bb5d-f79442531017")
@@ -24,7 +25,8 @@ def test_query_funds_flow():
 
 
 def test_create_order():
-    resp = create_order("000002", "B", "SA", 5.01, 100)
+    # resp = create_order("000736", "S", "SA", 10.91, 100)
+    resp = create_order("000736", "S", 10.86, 100)
     assert resp
     assert resp["Status"] in (0, -1)
 

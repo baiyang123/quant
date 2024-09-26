@@ -1,5 +1,6 @@
 import json
 import requests
+import okx.PublicData as PublicData
 
 '''
 https://my.okx.com/docs-v5/zh/?python#overview-rest-authentication 接口文档
